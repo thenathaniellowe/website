@@ -1,0 +1,77 @@
+html, body {
+	background-color: #ffffff;
+}
+
+#nav1 {
+	opacity: .5;
+}
+
+#brand_container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;
+	transition: .5s;
+	overflow: hidden;
+}
+
+#brand {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+  	height: 100%;
+}
+
+#identity_container {
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+	height: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	opacity: 0;
+	transition: 1s;
+}
+
+#identity {
+	width: 100%;
+	position: absolute;
+	top: -30%;
+}
+
+#face_container {
+	position: absolute;
+	width: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+	transition: 1s;
+	top: 10%;
+}
+
+#face {
+	position: absolute;
+	width: 100%;
+	animation: face 6s 0s infinite alternate;
+	animation-timing-function: ease;
+}
+
+#face:hover {
+	cursor: pointer;
+}
+
+@keyframes face {
+	0% {transform: rotate(12deg);}
+	20% {transform: rotate(-18deg);}
+	40% {transform: rotate(8deg);}
+	60% {transform: rotate(-12deg);}
+	80% {transform: rotate(10deg);}
+	100% {transform: rotate(-14deg);}
+}
+
+@media only screen and (orientation: portrait) {
+	.nav1 {
+	width: 100%;
+	height: 24vw;
+	}
+}

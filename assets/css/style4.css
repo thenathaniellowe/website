@@ -1,0 +1,156 @@
+html, body {
+	background-color: white;
+}
+
+
+#portfolio {
+	width: 60%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.bar {
+	width: 100%;
+	height: 12vw;
+	position: absolute;
+	margin: 0;
+	top: 0px;
+	background-color: black;
+}
+
+#portfolio_container {
+	width: 750px;
+	height: 4250px;
+	position: relative;
+	margin: auto;
+	left: 0;
+	transition: .5s;
+	opacity: 0;
+	top: 5%;
+}
+
+.photo_container {
+	border-radius: 5px;
+	width: 350px;
+	height: 350px;
+	position: relative;
+	display: inline-block;
+	margin: 10px 10px 10px 10px;
+	border-style: solid;
+	border-color: #090329;
+	border-width: 5px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.thumbnail {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: grayscale(100%);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.photo_container:hover {
+	cursor: pointer;
+}
+
+.photo {
+	width: 60%;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.square {
+	position: fixed;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    height: 90%;
+}
+
+.tall_photo {
+	height: 90%;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.tall_photo:nth-child(3) {
+  top: 49%;
+  left: 49%;
+}
+
+#overlay_container {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	display: none;
+	z-index: 5;
+	top: 0px;
+}
+
+#overlay {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(0, 0, 0, .8);
+	z-index: 10;
+}
+
+#x {
+	width: 25px;
+	position: fixed;
+	top:10px;
+	right: 10px;
+	z-index: 21;
+}
+
+#x:hover {
+	cursor: pointer;
+}
+
+#overlay:hover {
+	cursor: pointer;
+}
+
+.pic_click {
+	z-index: 20;
+	position: fixed;
+}
+
+#space {
+	height: 10vw;
+}
+
+@media only screen and (orientation: portrait) {
+	.tall_photo {
+		height: 70%;
+	}
+
+	.square {
+		height: 40%;
+	}
+
+	.photo {
+		width: 85%;
+	}
+
+	.tall_photo:nth-child(3) {
+  		top: 47%;
+  		left: 47%;
+	}
+}
