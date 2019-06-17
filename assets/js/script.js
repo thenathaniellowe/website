@@ -6,22 +6,16 @@ $(document).ready(function(){
     $("#portfolio_container").css("opacity","1");
     $("#description_container").css("left","50%");
     $("#face_container").css("opacity","1");
-    $("#face_container").css("width","600px");
+    $("#face_container").css("width","500px");
 
     // index1
-    $(".nav").hover(function(){
-        $(this).css("opacity", "1");
-    }, function() {
-        $(this).css("opacity", ".1");
-    });
-
     $("#face").hover(function(){
         $("#identity_container").css("opacity", "1");
-        $("#face_container").css("width", "700px");
+        $("#face_container").css("width", "600px");
         $(".nav").css("opacity", "0")
     }, function() {
         $("#identity_container").css("opacity", "0");
-        $("#face_container").css("width", "600px");
+        $("#face_container").css("width", "500px");
         $(".nav").css("opacity", ".1");
     });
 
@@ -34,6 +28,22 @@ $(document).ready(function(){
         $(this).css("opacity", "1");
     }, function() {
         $(this).css("opacity", ".6");
+    });
+
+    $("#button").hover(function(){
+        $(this).css("opacity", "1");
+    }, function() {
+        $(this).css("opacity", ".6");
+    });
+
+    $("#button").click(function(){
+        $("#drive_container").css("opacity", "1");
+        $("#drive_container").css("z-index", "10");
+        $("#drive").trigger("play");
+        $("#button_container").css("visibility", "hidden");
+        $("body,html").css("background-color", "white");
+        $(".white_bar").css("background-color", "white");
+        $("#links_container").css("background-color", "white");
     });
 
     $(".icon").hover(function(){

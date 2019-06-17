@@ -1,48 +1,174 @@
 html, body {
 	background-color: #fefcfe;
+	font-size: 40px;
+	font-family: 'Muli', sans-serif;
+	font-weight: 300;
+}
+
+#name_container {
+	width: 60%;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	animation: name 4s 1s 1 normal;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+	opacity: 1;
+}
+
+@keyframes name {
+	0% {top: 50%;}
+	50% {top: 50%;}
+	100% {top: 10%;}
+	0% {opacity: 1;}
+	80% {opacity: 1;}
+	100% {opacity: 0;}
 }
 
 #name {
-	width: 60%;
+	width: 100%;
 	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#drive_container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
 	top: 0px;
-	left: 50%;
-	transform: translateX(-50%);
+	z-index: -10;
 }
 
-.nav2 {
-	width: 42vw;
-	height: 6vw;
-	bottom: 0px;
-	position: fixed;
-	z-index: 3;
-	left: 50%;
-	transform: translateX(-50%);
-	background-color: rgba(254, 252, 254, 0.6);
-	border-radius: .5vw;
-
-}
-
-#links_container {
-	width: 415px;
-	height: 100px;
+#drive {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	background-color: rgba(254, 252, 254, 0.6);
+	width: 100%;
+	z-index: 2;
+}
+
+@keyframes drive {
+	0% {visibility: hidden}
+	100% {visibility: visible;}
+}
+
+#p_container {
+	position: relative;
+	width: 80%;
+	height: 75%;
+	text-align: center;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -10%;
+}
+
+p {
+	animation: paragraph 4s 4.5s 1 normal;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+
+@keyframes paragraph {
+	0% {opacity: 0;}
+	30% {opacity: 1;}
+	70% {opacity: 1;}
+	100% {opacity: 0};
+}
+
+p:nth-child(2) {
+	text-align: left;
+	animation-delay: 5.5s;
+}
+p:nth-child(3) {
+	animation-delay: 6s;
+	animation-duration: : 3s;
+}
+p:nth-child(4) {
+	text-align: right;
+	animation-delay: 6.5s;
+	animation-duration: : 2.5s;
+}
+
+#button_container {
+	width: 75%;
+	height: 50%;
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 25%;
+	animation: button_container 1s 10s 1 normal;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+	text-align: center;
+	z-index: 1;
+	opacity: .6s;
+}
+
+#button {
+	position: relative;
+	width: 15vw;
+    height: 7vw;
+    border-radius: 7vw;
+	font-size: 2vw;
+	line-height: 7vw;
+	background-color: rgba(60, 90, 152, 1);
+	border-radius: 7vw;
+	color: white;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: .2s;
+	margin-top: 2vw;
+}
+
+#button:hover {
+	cursor: pointer;
+	box-shadow: -5px 5px 10px rgba(60, 90, 152, .5);
+}
+
+#button_text {
+	width: 100%;
+	height: auto;
+	position: relative;
+	text-align: center;
+}
+
+@keyframes button_container {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+#links_container {
+	width: 355px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #fefcfe;
 	border-radius: .5vw;
-	top: 10600px;
+	top: -20%;
+	animation: links 1s 11s 1 normal;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+	margin-bottom: 10%;
+	z-index: 3;
+}
+
+@keyframes links {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
 }
 
 .link {
-	width: 70px;
-	height: 70px;
+	width: 50px;
+	height: 50px;
 	position: relative;
 	display: inline-block;
 	margin-left: 15px;
 	margin-right: 15px;
 	margin-top: 15px;
-
 }
 
 .icon {
@@ -54,185 +180,14 @@ html, body {
 
 .white_bar {
 	background-color: #fefcfe;
-}
-
-#parallax_container {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-}
-
-.parallax { 
-	position: relative;
-	height: 700px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-}
-
-#p_container {
-	width: 95%;
-	height: 100%;
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-p {
-	background-color: rgba(254, 252, 254, 0.4);
-	padding: 1%;
-	font-size: 28px;
-	font-family: 'Muli', sans-serif;
-	font-weight: 300;
-	width: 80%;
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	border-radius: 10px;
-}
-
-@media only screen and (orientation: landscape) {
-	p:nth-child(1) {
-		top: 0px;
-	}
-	p:nth-child(2) {
-		top: 225px;
-	}
-	p:nth-child(3) {
-		top: 600px;
-		left: 72.5%;
-		width: 35%;
-	}
-	p:nth-child(4) {
-		top: 1325px;
-	}
-	p:nth-child(5) {
-		top: 1900px;
-		left: 18%;
-		width: 20%;
-		text-align: center;
-		font-weight: 600;
-		color: white;
-		box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.5);
-		text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-	}
-	p:nth-child(6) {
-		top: 2250px;
-		left: 82%;
-		width: 18%;
-		text-align: center;
-		font-weight: 600;
-		color: white;
-		box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.5);
-		text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-	}
-	p:nth-child(7) {
-		top: 2550px;
-	}
-	p:nth-child(8) {
-		top: 2750px;
-		width: 35%;
-		left: 27.4%;
-	}
-	p:nth-child(9) {
-		top: 3350px;
-	}
-	p:nth-child(10) {
-		top: 3950px;
-	}
-	p:nth-child(11) {
-		top: 4400px;
-	}
-	p:nth-child(12) {
-		top: 5100px;
-	}
-	p:nth-child(13) {
-		top: 5475px;
-	}
-	p:nth-child(14) {
-		top: 6575px;
-	}
-	p:nth-child(15) {
-		top: 7875px;
-	}
-	p:nth-child(16) {
-		top: 8925px;
-	}
-	p:nth-child(17) {
-		top: 9800px;
-		width: 60%;
-		text-align: center;
-	}
-
-	.parallax:nth-child(1) {
-		background-image: url("parallax/innod.jpg");
-		margin-top: 625px;
-		height: 700px;
-		background-size: 50%;
-		background-position-x: left;
-		background-position-y: center;
-	}
-	.parallax:nth-child(2) {
-		background-image: url("parallax/street.jpg");
-		margin-top: 525px;
-	}
-	.parallax:nth-child(3) {
-		background-image: url("parallax/monterey.jpeg");
-		margin-top: 225px;
-		height: 575px;
-		background-size: 50%;
-		background-position-x: right;
-	}
-	.parallax:nth-child(4) {
-		background-image: url("parallax/columbus.jpg");
-		margin-top: 450px;
-		height: 575px;
-	}
-	.parallax:nth-child(5) {
-		background-image: url("parallax/orange_jacket.jpg");
-		margin-top: 525px;
-		height: 550px;
-	}
-	.parallax:nth-child(6) {
-		background-image: url("parallax/driveway.jpg");
-		margin-top: 400px;
-	}
-	.parallax:nth-child(7) {
-		background-image: url("parallax/green_door.jpg");
-		margin-top: 400px;
-		height: 900px;
-		background-position-y: center;
-	}
-	.parallax:nth-child(8) {
-		background-image: url("parallax/sf.jpg");
-		top: 400px;
-		height: 650px;
-		background-position-y: center; 
-	}
-	.parallax:nth-child(9) {
-		background-image: url("parallax/brooklyn.jpg");
-		top: 1075px;
-	}
-	.parallax:nth-child(10) {
-		background-image: url("parallax/park.jpg");
-		top: 975px;
-		height: 800px;
-	}
+	position: fixed;
+	bottom: 0px;
+	z-index: 4;
 }
 
 @media only screen and (orientation: portrait) {
 	#description_container {
 	font-size: 4vw;
-	}
-
-	.parallax {
-		display: none;
-	}
-
-	p {
-		font-size: 4vw;
-		position: relative;
 	}
 
 	#links_container {
