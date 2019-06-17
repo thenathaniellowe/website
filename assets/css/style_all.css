@@ -3,6 +3,8 @@ html, body {
 	height: 100%;
 	margin: 0;
 	background-color: white;
+	font-family: 'Muli', sans-serif;
+	font-weight: 200;
 }
 
 .nav {
@@ -30,8 +32,6 @@ html, body {
 	color: #666666;
 	position: absolute;
 	text-align: center;
-	font-family: 'Muli', sans-serif;
-	font-weight: 200;
 	font-size: 1.5vw;
 	z-index: 4;
 	left: 50%;
@@ -45,8 +45,6 @@ html, body {
 	color: #666666;
 	position: absolute;
 	text-align: center;
-	font-family: 'Muli', sans-serif;
-	font-weight: 200;
 	font-size: 1.5vw;
 	z-index: 4;
 	left: 50%;

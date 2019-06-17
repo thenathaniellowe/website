@@ -1,10 +1,7 @@
 $(document).ready(function(){
 
     // page load
-    $("#median").css("opacity", "1");
-    $("#median").css("margin-top","3vw");
     $("#portfolio_container").css("opacity","1");
-    $("#description_container").css("left","50%");
     $("#face_container").css("opacity","1");
     $("#face_container").css("width","500px");
 
@@ -20,7 +17,7 @@ $(document).ready(function(){
     });
 
     $("#face").click(function(){
-        $("#brand_container").css("display", "inline-block");
+        $("#brand_container").show();
     });
 
     // index2
@@ -76,14 +73,14 @@ $(document).ready(function(){
     });
 
     $(".photo:nth-child(n + 2)").click(function(){
-        $(this).css("z-index", "20");
-        $(this).siblings(".photo:nth-child(n + 2)").css("z-index", "19");
-        $(this).siblings(".square:nth-child(n + 2)").css("z-index", "19");
+        $(this).css("z-index", "23");
+        $(this).siblings(".photo:nth-child(n + 2)").css("z-index", "22");
+        $(this).siblings(".square:nth-child(n + 2)").css("z-index", "22");
     });
 
     $(".tall_photo:nth-child(n + 2)").click(function(){
-        $(this).css("z-index", "20");
-        $(this).siblings(".tall_photo:nth-child(n + 2)").css("z-index", "19");
+        $(this).css("z-index", "23");
+        $(this).siblings(".tall_photo:nth-child(n + 2)").css("z-index", "22");
     });
 
     $("#overlay").click(function(){
