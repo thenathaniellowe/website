@@ -171,8 +171,8 @@ html, body {
 	font-weight: 900;
 	animation: guide 3s 0s infinite normal;
 	font-size: 75px;
-	text-shadow: -10px 10px 10px rgba(255, 255, 255, 0.25);\
-	opacity: 0;
+	text-shadow: -10px 10px 10px rgba(255, 255, 255, 0.25);
+	display: none;
 }
 
 .guide:nth-child(1) {

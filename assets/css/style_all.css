@@ -24,22 +24,17 @@ html, body {
 	height: 6vw;
 	position: relative;
 	float: left;
+	filter: grayscale(100%);
+}
+
+.nav_container_full {
+	width: 10vw;
+	height: 6vw;
+	position: relative;
+	float: left;
 }
 
 .nav_title {
-	width: 10vw;
-	height: 2vw;
-	color: #666666;
-	position: absolute;
-	text-align: center;
-	font-size: 1.5vw;
-	z-index: 4;
-	left: 50%;
-	transform: translateX(-50%);
-	top: 4vw;
-}
-
-.nav_title_full {
 	width: 10vw;
 	height: 2vw;
 	color: #666666;
@@ -58,23 +53,6 @@ html, body {
 	margin-left: 3.5vw;
 	margin-right: 3.5vw;
 	top: .5vw;
-}
-
-.nav_icon_full {
-	width: 3vw;
-	position: absolute;
-	margin-left: 3.5vw;
-	margin-right: 3.5vw;
-	top: .5vw;
-}
-
-.nav_icon_two {
-	width: 3vw;
-	position: absolute;
-	margin-left: 3.5vw;
-	margin-right: 3.5vw;
-	top: .5vw;
-	opacity: 0;
 }
 
 .white_bar {
@@ -109,28 +87,7 @@ a {
 		top: 16vw;
 	}
 
-	.nav_title_full {
-		width: 16vw;
-		height: 8vw;
-		font-size: 5vw;
-		top: 16vw;
-	}
-
 	.nav_icon {
-		width: 10vw;
-		position: absolute;
-		margin-left: 3vw;
-		top: 4vw;
-	}
-
-	.nav_icon_full {
-		width: 10vw;
-		position: absolute;
-		margin-left: 3vw;
-		top: 4vw;
-	}
-
-	.nav_icon_two {
 		width: 10vw;
 		position: absolute;
 		margin-left: 3vw;

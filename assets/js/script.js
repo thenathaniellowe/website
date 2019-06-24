@@ -1,29 +1,31 @@
 $(document).ready(function(){
 
+    // nav
+    $(".nav_container").hover(function(){
+        $(this).css("filter", "grayscale(25%)");
+    }, function() {
+        $(this).css("filter", "grayscale(100%)");
+        });
+
     // page load
-    $("#face_container").css("opacity","1");
+    $("#face_container, .guide").css("opacity","1");
     $("#face_container").css("width","100%");
-    $(".guide").css("opacity", "0");
 
     // index1
-     $(".face").hover(function(){
-            $("#identity_container").css("opacity", "1");
-            $(".guide:nth-of-type(1)").css("opacity", "1");
-        }, function() {
-            $("#identity_container").css("opacity", "0");
-            $(".guide:nth-of-type(1)").css("opacity", "0");
-        });
+    $(".face").hover(function(){
+        $("#identity_container").css("opacity", "1");
+        $(".guide:nth-of-type(1)").show();
+    }, function() {
+        $("#identity_container").css("opacity", "0");
+        $(".guide:nth-of-type(1)").hide();
+    });
 
-     $("#hands_container").hover(function(){
-            $("#identity_container").css("opacity", "1");
-            $(".guide:nth-of-type(1)").css("opacity", "1");
-        }, function() {
-            $("#identity_container").css("opacity", "0");
-            $(".guide:nth-of-type(1)").css("opacity", "0");
-        });
-
-    $(".face").click(function(){
-        $("#brand_container").show();
+    $("#hands_container").hover(function(){
+        $("#identity_container").css("opacity", "1");
+        $(".guide:nth-of-type(1)").show();
+    }, function() {
+        $("#identity_container").css("opacity", "0");
+        $(".guide:nth-of-type(1)").hide();
     });
 
     $(".face").click(function(){
@@ -31,13 +33,7 @@ $(document).ready(function(){
     });
 
     // index2
-    $("#download").hover(function(){
-        $(this).css("opacity", "1");
-    }, function() {
-        $(this).css("opacity", ".6");
-    });
-
-    $("#button").hover(function(){
+    $("#download, #button").hover(function(){
         $(this).css("opacity", "1");
     }, function() {
         $(this).css("opacity", ".6");
@@ -59,7 +55,7 @@ $(document).ready(function(){
         $(".icon").css("opacity", ".6");
         });
 
-    // index 1
+    // index 4
     $(".tab").click(function(){
         $(".tab").css("filter", "grayscale(100%)");
         $(this).css("filter", "grayscale(0%)");
@@ -72,12 +68,6 @@ $(document).ready(function(){
     $(".tab:nth-child(1)").click(function(){
         $("#portfolio_container").show();
         $("#photography_samples").hide();
-    });
-
-    $("#button").hover(function(){
-        $(this).css("opacity", "1");
-    }, function() {
-        $(this).css("opacity", ".6");
     });
 
     $(".thumbnail").hover(function(){
@@ -93,19 +83,9 @@ $(document).ready(function(){
     });
 
     $(".thumbnail").click(function(){
-        $(this).siblings(".photo").addClass("pic_click");
-        $(this).siblings(".photo").show();
-        $(this).siblings(".tall_photo").addClass("pic_click");
-        $(this).siblings(".tall_photo").show();
-        $(this).siblings(".square").addClass("pic_click");
-        $(this).siblings(".square").show();
+        $(this).siblings().addClass("pic_click");
+        $(this).siblings().show();
         $("#overlay_container").show();
-    });
-
-    $(".photo:nth-child(n + 2)").click(function(){
-        $(this).css("z-index", "23");
-        $(this).siblings(".photo:nth-child(n + 2)").css("z-index", "22");
-        $(this).siblings(".square:nth-child(n + 2)").css("z-index", "22");
     });
 
     $(".tall_photo:nth-child(n + 2)").click(function(){
@@ -113,67 +93,11 @@ $(document).ready(function(){
         $(this).siblings(".tall_photo:nth-child(n + 2)").css("z-index", "22");
     });
 
-    $("#overlay").click(function(){
+    $("#overlay, #x").click(function(){
         $("#overlay_container").hide();
         $(".description_container").hide();
         $(".square").hide();
         $(".photo").hide();
         $(".tall_photo").hide();
     });
-
-    $("#x").click(function(){
-        $("#overlay_container").hide();
-        $(".description_container").hide();
-        $(".square").hide();
-        $(".photo").hide();
-        $(".tall_photo").hide();
-    });
-
-    // nav
-    $(".nav_icon").hover(function(){
-        $(this).siblings(".nav_icon_two").css("opacity", ".6");
-        $(this).siblings(".nav_title").css("opacity", ".6");
-        $(this).siblings(".nav_title").css("color", "#3c5a98");
-        $(this).hide();
-    }, function() {
-        $(this).siblings(".nav_icon_two").css("opacity", "0");
-        $(this).siblings(".nav_title").css("opacity", "1");
-        $(this).siblings(".nav_title").css("color", "#666666");
-        $(this).show();
-        });
-
-    $(".nav_icon_two").hover(function(){
-        $(this).css("opacity", ".6");
-        $(this).siblings(".nav_title").css("opacity", ".6");
-        $(this).siblings(".nav_title").css("color", "#3c5a98");
-        $(this).siblings(".nav_icon").hide();
-    }, function() {
-        $(this).css("opacity", "0");
-        $(this).siblings(".nav_title").css("opacity", "1");
-        $(this).siblings(".nav_title").css("color", "#666666");
-        $(this).siblings(".nav_icon").show();
-        });
-
-    $(".nav_title").hover(function(){
-        $(this).siblings(".nav_icon_two").css("opacity", ".6");
-        $(this).css("opacity", ".6");
-        $(this).css("color", "#3c5a98");
-        $(this).siblings(".nav_icon").hide();
-    }, function() {
-        $(this).siblings(".nav_icon_two").css("opacity", "0");
-        $(this).css("opacity", "1");
-        $(this).css("color", "#666666");
-        $(this).siblings(".nav_icon").show();
-        });
-
-     $(".nav").hover(function(){
-        $("#face_container").css("opacity", ".3");
-        $(".guide:nth-of-type(2)").css("opacity", "1");
-        $(".guide:nth-of-type(1)").css("opacity", "0");
-    }, function() {
-        $("#face_container").css("opacity", "1");
-        $(".guide:nth-of-type(2)").css("opacity", "0");
-        $(".guide:nth-of-type(1)").css("opacity", "1");
-        });
-
 });
