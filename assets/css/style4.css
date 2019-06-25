@@ -13,21 +13,26 @@ html, body {
 #tab_container {
 	margin-top: 50px;
 	width: 150px;
-	height: 50px;
+	height: 75px;
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
 	overflow: hidden;
+	background-color: rgba(60, 90, 152, .1);
+	border-radius: 20px;
 }
 
 .tab {
+	top: 50%;
+	transform: translateY(-45%);
 	width: 50px;
 	position: relative;
 	float: left;
+	margin-left: 10px;
 }
 
 .tab:nth-child(2) {
-	margin-left: 50px;
+	margin-left: 25px;
 	filter: grayscale(100%);
 }
 
@@ -74,7 +79,7 @@ html, body {
 
 #photography_samples {
 	width: 1110px;
-	height: 1000px;
+	height: 1200px;
 	position: relative;
 	margin: auto;
 	left: 0px;
@@ -189,14 +194,39 @@ html, body {
   		top: 47%;
   		left: 47%;
 	}
+
+	.thumbnail {
+		filter: grayscale(0%);
+	}
 	.photo_container {
 		width: 300px;
 		height: 300px;
 	}
+
+	#portfolio {
+		width: 90%;
+	}
+
 	#portfolio_container {
 		width: 650px;
+		height: 3850px;
+		margin-top: -50px;
 	}
+
+	.bar {
+		height: 18vw;
+	}
+
 	#photography_samples {
 		width: 970px;
+	}
+
+	#tab_container {
+		height: 140px;
+		width: 270px;
+	}
+	.tab {
+		width: 100px;
+		margin-left: 20px;
 	}
 }

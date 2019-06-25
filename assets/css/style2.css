@@ -46,11 +46,6 @@ html, body {
 	width: 100%;
 }
 
-@keyframes drive {
-	0% {visibility: hidden}
-	100% {visibility: visible;}
-}
-
 #p_container {
 	position: relative;
 	width: 80%;
@@ -146,11 +141,10 @@ p:nth-child(4) {
 	transform: translateX(-50%);
 	background-color: #fefcfe;
 	border-radius: .5vw;
-	top: -20%;
 	animation: links 1s 11s 1 normal;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: both;
-	margin-bottom: 10%;
+	margin-top: 5%;
 	z-index: 3;
 }
 
@@ -199,7 +193,7 @@ p:nth-child(4) {
 	}
 
 	#links_container {
-		width: 560px;
+		width: 590px;
 		height: 150px
 	}
 

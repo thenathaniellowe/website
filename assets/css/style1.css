@@ -22,9 +22,8 @@ html, body {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-  	height: 107%;
+  	height: 108%;
   	object-fit: cover;
-  	top: -5%;
 }
 
 #identity_container {
@@ -208,10 +207,51 @@ html, body {
 	80% {transform: rotate(9deg);}
 	100% {transform: rotate(-8deg);}
 }
+@media only screen and (orientation: landscape) {
+	.white_bar {
+		display: none;
+	}
+}
 
 @media only screen and (orientation: portrait) {
-	.nav1 {
+	.nav {
 	width: 100%;
-	height: 24vw;
+	height: 24v
+	}
+
+	#nav1 {
+		opacity: 1;
+	}
+
+	.nav_icon {
+		opacity: 1;
+	}
+
+	.face:nth-child(n) {
+		width: 100%;
+	}
+	.face:nth-child(2) {
+		top: 25%;
+	}
+	.face:nth-child(3) {
+		top: 60%;
+	}
+
+	#hands_container {
+		display: none;
+	}
+
+	#identity_container {
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	}
+	
+	#identity {
+	height: 100%;
+	width: auto;
+	position: absolute;
+	top: 0px;
+	left: -40%;
 	}
 }

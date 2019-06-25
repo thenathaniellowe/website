@@ -8,7 +8,7 @@ html, body {
 }
 
 .nav {
-	width: 42vw;
+	width: 43vw;
 	height: 6vw;
 	bottom: 0px;
 	position: fixed;
@@ -23,7 +23,7 @@ html, body {
 	width: 10vw;
 	height: 6vw;
 	position: relative;
-	float: left;
+	display: inline-block;
 	filter: grayscale(100%);
 }
 
@@ -31,7 +31,7 @@ html, body {
 	width: 10vw;
 	height: 6vw;
 	position: relative;
-	float: left;
+	display: inline-block;
 }
 
 .nav_title {
@@ -75,6 +75,12 @@ a {
 	}
 
 	.nav_container {
+		width: 16vw;
+		height: 24vw;
+		margin-left: 7.5vw;
+	}
+
+	.nav_container_full {
 		width: 16vw;
 		height: 24vw;
 		margin-left: 7.5vw;

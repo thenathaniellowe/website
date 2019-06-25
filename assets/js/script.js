@@ -1,26 +1,11 @@
 $(document).ready(function(){
-
-    // nav
-    $(".nav_container").hover(function(){
-        $(this).css("filter", "grayscale(25%)");
-    }, function() {
-        $(this).css("filter", "grayscale(100%)");
-        });
-
     // page load
     $("#face_container, .guide").css("opacity","1");
     $("#face_container").css("width","100%");
 
-    // index1
+    if(window.innerWidth > window.innerHeight){
+    //landscape
     $(".face").hover(function(){
-        $("#identity_container").css("opacity", "1");
-        $(".guide:nth-of-type(1)").show();
-    }, function() {
-        $("#identity_container").css("opacity", "0");
-        $(".guide:nth-of-type(1)").hide();
-    });
-
-    $("#hands_container").hover(function(){
         $("#identity_container").css("opacity", "1");
         $(".guide:nth-of-type(1)").show();
     }, function() {
@@ -32,8 +17,25 @@ $(document).ready(function(){
         $("#brand_container").show();
     });
 
+    $(".nav_container").hover(function(){
+        $(this).css("filter", "grayscale(25%)");
+    }, function() {
+        $(this).css("filter", "grayscale(100%)");
+    });
+
+    $("#nav1").hover(function(){
+        $(this).css("opacity", "1");
+        $("#face_container").css("opacity", ".25");
+        $(".guide:nth-child(2)").show();
+    }, function() {
+        $(this).css("opacity", ".1");
+        $("#face_container").css("opacity", "1");
+        $(".guide:nth-child(2)").hide();
+    });
+    }
+
     // index2
-    $("#download, #button").hover(function(){
+    $("#download, #button, .icon").hover(function(){
         $(this).css("opacity", "1");
     }, function() {
         $(this).css("opacity", ".6");
@@ -48,12 +50,6 @@ $(document).ready(function(){
         $(".white_bar").css("background-color", "white");
         $("#links_container").css("background-color", "white");
     });
-
-    $(".icon").hover(function(){
-        $(this).css("opacity", "1");
-    }, function() {
-        $(".icon").css("opacity", ".6");
-        });
 
     // index 4
     $(".tab").click(function(){
