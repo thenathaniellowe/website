@@ -1,0 +1,123 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background-color: white;
+	font-family: muli;
+	font-weight: 100;
+}
+
+#vault_container {
+	position: fixed;
+	width: 750px;
+	height: 1250px;
+	background-color: rgba(60, 90, 152, 1);
+	left: 50%;
+	transform: translateX(-50%);
+	top: 25%;
+	border-radius: 40px;
+	box-shadow: -10px 10px 20px rgba(60, 90, 152, .5);
+}
+
+#pill {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: white;
+	width: 71%;
+	height: 15%;
+	top: 10%;
+	border-radius: 25px;
+	box-shadow: -20px 20px 15px rgba(60, 90, 152, .7);
+}
+
+.ast {
+	position: relative;
+	font-size: 110px;
+	width: 120px;
+	height: 120px;
+	display: inline-block;
+	line-height: 150px;
+	text-align: center;
+	top: 15%;
+	opacity: 0;
+}
+
+#button_container {
+	position: relative;
+	top: 15%;
+	height: 60%;
+	width: 70%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.number {
+	position: relative;
+	height: 120px;
+	width: 120px;
+	background-color: white;
+	border-radius: 100%;
+	font-size: 100px;
+	line-height: 120px;
+	text-align: center;
+	float: left;
+	margin-left: 40px;
+	margin-top: 40px;
+	font-weight: 900;
+	box-shadow: -20px 20px 15px rgba(60, 90, 152, 1);
+}
+
+.bar {
+	position: absolute;
+}
+
+#delete {
+	font-size: 50px;
+	opacity: .7;
+
+}
+
+#enter {
+	font-size: 50px;
+	opacity: .7;
+}
+
+#cover {
+	display: none;
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 48%;
+}
+
+p {
+	position: relative;
+	width: 85%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 50px;
+	margin-top: 10%;
+}
+
+p:nth-child(1) {
+	font-weight: 900;
+}
+
+.attachment {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 75%;
+}
+
+.image {
+	width: 100%;
+	margin-bottom: 100px;
+}
+@media only screen and (orientation: landscape) {
+	body {
+		display: none;
+	}
