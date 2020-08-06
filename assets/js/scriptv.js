@@ -18,6 +18,9 @@ $(document).ready(function(){
     $("#two_trigger").click(function() {
         $("#cover").show();
     });
+    $("#one_trigger").click(function() {
+        $("#covertwo").show();
+    });
 
     $("#cover").click(function() {
         $("#two").css("opacity", "1");
@@ -34,6 +37,24 @@ $(document).ready(function(){
                 $(this).css("left", "80%");
                 $("#cover").click(function() {
                     $(this).attr("href", "imapos.html");
+                 })
+            })
+        })
+    });
+    $("#covertwo").click(function() {
+        $("#two").css("opacity", "1");
+        $(this).css("top", "27%");
+        $(this).css("left", "49%");
+        $("#covertwo").click(function() {
+            $("#three").css("opacity", "1");
+            $("#covertwo").click(function() {
+                $("#four").css("opacity", "1");
+                $(".number").css("opacity", ".7");
+                $("#enter").css("opacity", "1");
+                $(this).css("top", "70%");
+                $(this).css("left", "80%");
+                $("#covertwo").click(function() {
+                    $(this).attr("href", "enough.html");
                  })
             })
         })
