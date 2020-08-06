@@ -93,6 +93,16 @@ html, body {
 	top: 48%;
 }
 
+#covertwo {
+	display: none;
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	left: 19%;
+	transform: translateX(-50%);
+	top: 70%;
+}
+
 p {
 	position: relative;
 	width: 85%;
