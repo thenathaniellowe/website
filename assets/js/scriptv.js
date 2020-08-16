@@ -21,6 +21,9 @@ $(document).ready(function(){
     $("#one_trigger").click(function() {
         $("#covertwo").show();
     });
+    $("#five_trigger").click(function() {
+        $("#coverfive").show();
+    });
 
     $("#cover").click(function() {
         $("#two").css("opacity", "1");
@@ -37,7 +40,7 @@ $(document).ready(function(){
                 $(this).css("left", "80%");
                 $("#cover").click(function() {
                     $(this).attr("href", "imapos.html");
-                 })
+                })
             })
         })
     });
@@ -59,31 +62,22 @@ $(document).ready(function(){
             })
         })
     });
-
-    // $("#one_month").click(function(){
-    //     $("#zero_original").hide();
-    //     $("#zero_month").show();
-    // });
-
-    // $("#zero_month").click(function(){
-    //     $(this).hide();
-    //     $("#zero_date").show();
-    // });
-
-    // $("#zero_date").click(function(){
-
-    //     $("#nine_original").hide();
-    //     $("#nine_date").show();
-    // });
-
-    // $("#nine_date").click(function(){
-    //     $("#enter").hide();
-    //     $("#correct").show();
-    // });
-
-    // $("#correct").click(function(){
-    //     $("#vault_container").css("opacity", "0");
-    // });
+    $("#coverfive").click(function() {
+        $("#two").css("opacity", "1");
+        $("#coverfive").click(function() {
+            $("#three").css("opacity", "1");
+            $("#coverfive").click(function() {
+                $("#four").css("opacity", "1");
+                $(".number").css("opacity", ".7");
+                $("#enter").css("opacity", "1");
+                $(this).css("top", "70%");
+                $(this).css("left", "80%");
+                $("#coverfive").click(function() {
+                    $(this).attr("href", "five.html");
+                 })
+            })
+        })
+    });
 
     $("#delete").click(function(){
         $(".ast").css("opacity", "0");

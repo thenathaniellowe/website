@@ -1,71 +1,664 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home</title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Muli:200&display=swap" rel="stylesheet">
+	<title>scrolldown</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:900|Muli:200,700,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" rel="preload" type="text/css" href="assets/css/style.css" />
-	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/script.js"></script>
 </head>
-<body id="style1">
-	<div id="identity_container">
-		<img id="identity" src="assets/img/pages/identity.gif">
-	</div>
-	<div id="hands_container">
-		<img class="hand" src="assets/img/pages/hand.png">
-		<img class="hand" src="assets/img/pages/hand.png">
-	</div>
-	<div id="guide_container">
-		<div class="guide">
-			CLICK ME!
+<body>
+	<div id="home_container">
+		<div class="initials">
+			NL
 		</div>
-		<div class="guide">
-			OR EXPLORE!
+		<div class="initials initials_container">
+			NL
+		</div>
+		<div class="hover_tag">
+			CLICK TO VIEW or SCROLL TO EXPLORE!
+		</div>
+		<div id="discovery">
+			<video id="discovery_video" autoplay muted>
+				<source src="assets/img/pages/discovery.mp4" loading="lazy" type="video/mp4">
+			</video>
 		</div>
 	</div>
-	<div id="face_container">
-		<img class="face" src="assets/img/pages/green_door.png">
-		<img class="face" src="assets/img/pages/innod.png">
-		<img class="face" src="assets/img/pages/street.png">
-	</div>
-	<div id="brand_container">
-		<video autoplay muted loop id="brand">
-			<source src="assets/img/pages/brand.mp4" type="video/mp4">
+	<div id="about_container">
+		<div id="about_content">
+			<div id="face_container">
+				<img class="faces" src="assets/img/pages/innod.png" loading="lazy">
+				<img class="faces" src="assets/img/pages/street.png" loading="lazy">
+				<img class="faces" src="assets/img/pages/green_door.png" loading="lazy">
+			</div>
+			<div id="name">
+				<img id="name_gif" src="assets/img/pages/name.gif" loading="lazy">
+			</div>
+			<div class="button" id="my_story">
+				MY STORY
+			</div>
+			<div id="description">
+				<p>
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+				</p>
+				<p>
+				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				</p>
+			</div>
+		</div>
+		<video autoplay muted id="drive">
+			<source src="assets/img/pages/drive.mp4" loading="lazy" type="video/mp4">
 		</video>
 	</div>
-	<div class="nav" id="nav1">
-		<div class="nav_container_full">
-			<a href="index.html">
-				<img class="nav_icon" src="assets/img/icons/house_full.png">
-				<div class="nav_title" id="relax">
-					Relax
-				</div>
-			</a>
+	<div id="resume_container">
+		<div class="box black">
+			<div class="category">
+				EDUCATION
+			</div>
+			<div id="title">
+				<img id="title_vid" src="assets/img/pages/resume.gif" loading="lazy">
+			</div>
 		</div>
-		<div class="nav_container">
-			<a href="learn.html">
-				<img class="nav_icon" src="assets/img/icons/bulb_full.png">
-				<div class="nav_title">
-					Learn
+		<div class="box">
+			<div id="education_container">
+				<div class="education_line">
+					Columbia University
 				</div>
-			</a>
-		</div>
-		<div class="nav_container">
-			<a href="work.html">
-				<img class="nav_icon" src="assets/img/icons/case_full.png">
-				<div class="nav_title">
-					Work
+				<div class="education_line">
+					&
 				</div>
-			</a>
-		</div>
-		<div class="nav_container">
-			<a href="draw.html">
-				<img class="nav_icon" src="assets/img/icons/pencil_full.png">
-				<div class="nav_title">
-					Draw
+				<div class="education_line">
+					UC Berkeley
 				</div>
-			</a>
+				<div class="education_line">
+					B.A. Statistics
+				</div>
+				<div class="education_line">
+					Current GPA: 3.86
+				</div>
+			</div>
+			<div class="library">
+				<img class="library_img" src="assets/img/resume/doe.png">
+			</div>
+			<div class="library">
+				<img class="library_img" src="assets/img/resume/columbia.png">
+			</div>
 		</div>
+		<div class="box">
+			<div class="skills_container" id="design">
+				<div class="skill">
+					HTML
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+				</div>
+				<div class="skill">
+					CSS
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+				</div>
+				<div class="skill">
+					Javascript (JQuery)
+					<div class="edot">
+					</div>
+					<div class="edot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+				</div>
+				<div class="skill">
+					Adobe Illustrator
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+				</div>
+				<div class="skill">
+					Adobe AfterEffects
+					<div class="edot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+				</div>
+				<div class="skill">
+					Adobe Photoshop
+					<div class="edot">
+					</div>
+					<div class="edot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+				</div>
+				<div class="skill">
+					Adobe InDesign
+					<div class="edot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="box black">
+			<div class="category">
+				DESIGN SKILLS
+			</div>
+		</div>
+		<div class="box black">
+			<div class="category">
+				PROFESSIONAL SKILLS
+			</div>
+		</div>
+		<div class="box">
+			<div class="skills_container" id="professional">
+				<div class="skill">
+					Email Marketing
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+				</div>
+				<div class="skill">
+					CRM
+					<div class="edot">
+					</div>
+					<div class="edot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+				</div>
+				<div class="skill">
+					Marketing Strategy
+					<div class="edot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+				</div>
+				<div class="skill">
+					Event Planning
+					<div class="edot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+				</div>
+				<div class="skill">
+					Communication
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+				</div>
+				<div class="skill">
+					Leadership
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+					<div class="dot">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="box">
+			<div class="experience_line">
+				Account Executive
+			</div>
+			<div class="experience_line">
+				Transcendent Solutions (2019)
+			</div>
+			<div class="experience_line">
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+			</div>
+			<div class="experience_line">
+				Buyer
+			</div>
+			<div class="experience_line">
+				Company, Location
+			</div>
+			<div class="experience_line">
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+			</div>
+			<div class="experience_line">
+				Design and Student Assistant
+			</div>
+			<div class="experience_line">
+				UC Berkeley, (2016-2018)
+			</div>
+			<div class="experience_line">
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+			</div>
+			<div class="experience_line">
+				Marketing and Design Intern
+			</div>
+			<div class="experience_line">
+				Marvin Gardens Real Estate (2016)
+			</div>
+			<div class="experience_line">
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+			</div>
+			<div class="resume_background">
+				<img class="resume_img" src="assets/img/resume/computer.png" loading="lazy">
+			</div>
+			<div class="resume_background">
+				<img class="resume_img" src="assets/img/resume/book.png" loading="lazy">
+			</div>
+		</div>
+		<div class="box black">
+			<div class="category">
+				EXPERIENCE
+			</div>
+		</div>
+		<div class="box black">
+			<div class="category">
+				ACTIVITIES
+			</div>
+		</div>
+		<div class="box">
+			<div class="experience_line">
+				Motion Graphics Artist
+			</div>
+			<div class="experience_line">
+				The Daily Californian (2018)
+			</div>
+			<div class="experience_line">
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+			</div>
+			<div class="experience_line">
+				Marketing Associate
+			</div>
+			<div class="experience_line">
+				The Berkeley Project (2018-2019)
+			</div>
+			<div class="experience_line">
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+			</div>
+			<div class="experience_line">
+				Marketing Lead
+			</div>
+			<div class="experience_line">
+				Asian American Christian Fellowship, (2017-2018)
+			</div>
+			<div class="experience_line">
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+			</div>
+			<div class="experience_line">
+				Marketing Associate
+			</div>
+			<div class="experience_line">
+				Berkeley Advertising Agency
+			</div>
+			<div class="experience_line">
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+			</div>
+			<div class="resume_background background_position">
+				<img class="resume_img" src="assets/img/resume/flask.png" loading="lazy">
+			</div>
+			<div class="resume_background background_position">
+				<img class="resume_img" src="assets/img/resume/phone.png" loading="lazy">
+			</div>
+		</div>
+		<div class="box">
+			<div id="gradient">
+			</div>
+			<div class="contact_line">
+				thenathaniellowe.com
+			</div>
+			<div class="contact_line">
+				thenathaniellowe@gmail.com
+			</div>
+			<div class="contact_line">
+				(510) 747 2929
+			</div>
+			<div id="links_container">
+				<a href="https://www.instagram.com/thenathaniellowe/?hl=en" class="social_link">
+					<img class="icon" src="assets/img/icons/ig.png" loading="lazy">
+				</a>
+				<a href="https://www.linkedin.com/in/thenathaniellowe" class="social_link">
+					<img class="icon" src="assets/img/icons/in.png" loading="lazy">
+				</a>
+				<a href="https://www.facebook.com/nathaniel.lowe.18" class="social_link">
+					<img class="icon" src="assets/img/icons/fb.png" loading="lazy">
+				</a>
+				<a href="https://www.behance.net/thenathanif6bc" class="social_link">
+					<img class="icon" src="assets/img/icons/be.png" loading="lazy">
+				</a>
+			</div>
+				<div class="button" id="download">
+					<a target="_blank" class="david" href="assets/img/resume/resume.pdf">DOWNLOAD</a>
+				</div>
+			</div>
+			<div class="box black">
+				<div class="category">
+					CONTACT
+				</div>
+			</div>
+		<div class="hover_box">
+		</div>
+		<div class="hover_box">
+		</div>
+		<div class="hover_box">
+		</div>
+		<div class="hover_box">
+		</div>
+		<div class="hover_box">
+		</div>
+	</div>
+	<div id="overlay_container">
+		<div id="overlay">
+		</div>
+		<div id="x">
+		</div>
+	</div>
+	<div id="portfolio_container">
+		<img class="skyline" src="assets/img/pages/skyline_day.png" loading="lazy">
+		<img class="skyline" src="assets/img/pages/skyline.png" loading="lazy">
+		<img class="building" src="assets/img/pages/building2.png" loading="lazy">
+		<div class="animation_container subway">
+			<img class="train" src="assets/img/pages/subway.png" loading="lazy">
+			<img class="train" src="assets/img/pages/subway.png" loading="lazy">
+			<img class="train" src="assets/img/pages/subway.png" loading="lazy">
+			<img class="train" src="assets/img/pages/subway.png" loading="lazy">
+			<img class="train" src="assets/img/pages/subway.png" loading="lazy">
+		</div>
+		<img class="building" src="assets/img/pages/building.png" loading="lazy">
+		<img class="building" src="assets/img/pages/building6.png" loading="lazy">
+		<div class="animation_container taxi">
+			<img class="car" src="assets/img/pages/taxi.png" loading="lazy">
+			<img class="wheel" src="assets/img/pages/wheel.png" loading="lazy">
+			<img class="wheel" src="assets/img/pages/wheel.png" loading="lazy">
+		</div>
+		<img class="building" src="assets/img/pages/building3.png" loading="lazy">
+		<img class="building" src="assets/img/pages/building4.png" loading="lazy">
+		<img class="building" src="assets/img/pages/building5.png" loading="lazy">
+		<div class="animation_container taxi">
+			<img class="car" src="assets/img/pages/taxi.png" loading="lazy">
+			<img class="wheel" src="assets/img/pages/wheel.png" loading="lazy">
+			<img class="wheel" src="assets/img/pages/wheel.png" loading="lazy">
+		</div>
+		<img class="cloud" src="assets/img/pages/cloud.png" loading="lazy">
+		<img class="cloud" src="assets/img/pages/cloud2.png" loading="lazy">
+		<img class="plane" src="assets/img/pages/plane.png" loading="lazy">
+		<a href="vault.html" class="social_link">
+			<img class="plane" src="assets/img/pages/plane.png" loading="lazy">
+		</a>
+		<img class="cloud" src="assets/img/pages/cloud3.png" loading="lazy">
+		<div id="planet_container">
+			<img id="planet" src="assets/img/pages/planet.gif" loading="lazy">
+		</div>
+		<div id="moon_container">
+			<img id="moon" src="assets/img/pages/moon.png" loading="lazy">
+		</div>
+
+		<div id="carousel_view">
+			<div class="carousel" id="illustrations">
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/hands.jpg" loading="lazy">
+					<img class="square" src="assets/img/portfolio/hands.jpg" loading="lazy">
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/airplane.jpg" loading="lazy">
+					<video class="square" autoplay muted loop >
+						<source src="assets/img/portfolio/airplane.mp4" type="video/mp4" loading="lazy">
+					</video>
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/window.jpg" loading="lazy">
+					<video autoplay muted loop class="square" loading="lazy">
+						<source src="assets/img/portfolio/window.mp4" type="video/mp4" loading="lazy">
+					</video>
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/snacks.jpg" loading="lazy">
+					<video autoplay muted loop class="square">
+						<source src="assets/img/portfolio/snacks.mp4" type="video/mp4" loading="lazy">
+					</video>
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/	thumbnails/bar.jpg" loading="lazy">
+					<video autoplay muted loop class="square">
+						<source src="assets/img/portfolio/bar.mp4" type="video/mp4" loading="lazy">
+					</video>
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/sign_up.jpg" loading="lazy">
+					<img class="square" src="assets/img/portfolio/sign_up.png" loading="lazy">
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/countdown.jpg" loading="lazy">
+					<img class="square" src="assets/img/portfolio/countdown.png" loading="lazy">
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/035.jpg" loading="lazy">
+					<img class="square" src="assets/img/portfolio/35.png" loading="lazy">
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/036.jpg" loading="lazy">
+					<img class="square" src="assets/img/portfolio/36.png" loading="lazy">
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/50.jpg" loading="lazy">
+					<video autoplay muted loop class="square">
+						<source src="assets/img/portfolio/50.mp4" type="video/mp4" loading="lazy">
+					</video>
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/51.jpg" loading="lazy">
+					<img class="square" src="assets/img/portfolio/51.gif" loading="lazy">
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/012.jpg" loading="lazy">
+					<img class="square" src="assets/img/portfolio/012.png" loading="lazy">
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/037.jpg" loading="lazy">
+					<img class="square" src="assets/img/portfolio/37.png" loading="lazy">
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/23.png" loading="lazy">
+					<video autoplay muted loop class="square">
+						<source src="assets/img/portfolio/23.mp4" type="video/mp4" loading="lazy">
+					</video>
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/30.jpg" loading="lazy">
+					<video autoplay muted loop class="square">
+						<source src="assets/img/portfolio/30.mp4" type="video/mp4" loading="lazy">
+					</video>
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/014.jpg" loading="lazy">
+					<img class="square" src="assets/img/portfolio/14.png" loading="lazy">
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/55.png" loading="lazy">
+					<video autoplay muted loop class="square">
+						<source src="assets/img/portfolio/55.mp4" type="video/mp4" loading="lazy">
+					</video>
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/mystery.jpg" loading="lazy">
+					<img class="square" src="assets/img/portfolio/mystery.png" loading="lazy">
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/aacf.jpg" loading="lazy">
+					<video autoplay muted loop class="square">
+						<source src="assets/img/portfolio/aacf.mp4" type="video/mp4" loading="lazy">
+					</video>
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" id="pen_tool" src="assets/img/thumbnails/homework_4.jpg" loading="lazy">
+					<img class="square" src="assets/img/portfolio/homework_4.jpg" loading="lazy">
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" id="masks" src="assets/img/thumbnails/homework_7.jpg" loading="lazy">
+					<img class="square" src="assets/img/portfolio/homework_7.jpg" loading="lazy">
+				</div>
+			</div>
+			<div class="carousel" id="photography">
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/joanna.jpg" loading="lazy">
+					<img class="square" src="assets/img/portfolio/joanna.jpg" loading="lazy">
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/group.jpg" loading="lazy">
+					<img class="square" src="assets/img/portfolio/group.jpg" loading="lazy">
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/angelina.jpg" loading="lazy">
+					<img class="square" src="assets/img/portfolio/angelina.jpg" loading="lazy">
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/trails1.jpg" loading="lazy">
+					<img class="square" src="assets/img/portfolio/trails1.jpg" loading="lazy">
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/trails2.jpg" loading="lazy">
+					<img class="square" src="assets/img/portfolio/trails2.jpg" loading="lazy">
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/trails3.jpg" loading="lazy">
+					<img class="square" src="assets/img/portfolio/trails3.jpg" loading="lazy">
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/pier.jpg" loading="lazy">
+					<video autoplay muted loop class="square">
+						<source src="assets/img/portfolio/plotagraph1.mp4" type="video/mp4" loading="lazy">
+					</video>
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/lens.jpg" loading="lazy">
+					<video autoplay muted loop class="square">
+						<source src="assets/img/portfolio/plotagraph2.mp4" type="video/mp4" loading="lazy">
+					</video>
+				</div>
+				<div class="photo_container">
+					<img class="thumbnail" src="assets/img/thumbnails/chandelier.jpg" loading="lazy">
+					<video autoplay muted loop class="square">
+						<source src="assets/img/portfolio/chandelier.mp4" type="video/mp4" loading="lazy">
+					</video>
+				</div>
+			</div>
+		</div>
+		<div id="carousel_nav_container">
+			<div class="tab" id="pen">
+				<img class="portfolio_icon" src="assets/img/icons/pen_full.png" loading="lazy">
+			</div>
+			<div class="tab" id="camera">
+				<img class="portfolio_icon" src="assets/img/icons/camera_full.png" loading="lazy">
+			</div>
+			<div class="carousel_nav">
+			</div>
+			<div class="carousel_nav">
+			</div>
+			<div class="carousel_nav">
+			</div>
+			<div class="carousel_nav">
+			</div>
+			<div class="carousel_nav">
+			</div>
+			<div class="carousel_nav">
+			</div>
+			<div class="carousel_nav">
+			</div>
+		</div>
+		<div class="hover_tag">
+				VIEW PHOTOGRAPHY
+			</div>
+			<div class="hover_tag">
+				VIEW ILLUSTRATIONS
+			</div>
+	</div>
+	<div id="nav_menu">
+		<div class="nav" id="home">
+			Home
+		</div>
+		<div class="nav" id="about">
+			About
+		</div>
+		<div class="nav" id="resume">
+			Resume
+		</div>
+		<div class="nav" id="portfolio">
+			Portfolio
+		</div>
+	</div>
+	<div id="chevron_container">
+		<div id="chevron">
+		</div>
+	</div>
+	<div id="footer_container">
 	</div>
 </body>
 </html>
