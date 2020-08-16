@@ -1017,15 +1017,6 @@ a:nth-child(15) {
     }                       
 }*/
 @media (hover: none) and (pointer: coarse) {
-	.library {
-		opacity: 1;
-	}
-	.skills_container {
-		opacity: 1;
-	}
-	.resume_background {
-		opacity: 1;
-	}
 	.resume_background:nth-child(13) {
         left: 29.5vw;
         top: -6vw;
@@ -1050,6 +1041,15 @@ a:nth-child(15) {
     }
 }
 @media only screen and (orientation: portrait) {
+	.library {
+		opacity: 1;
+	}
+	.skills_container {
+		opacity: 1;
+	}
+	.resume_background {
+		opacity: 1;
+	}
 	.hover_tag:nth-child(3) {
 	   	font-size: 5vw;
 	   	top: 70%;
