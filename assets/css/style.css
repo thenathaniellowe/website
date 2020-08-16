@@ -445,6 +445,7 @@ body::-webkit-scrollbar {
 a:nth-child(15) {
 	animation: 20s 1 15s normal linear vaultplane;
 	top: 50%;
+	display: none;
 }
 .plane:nth-child(1) {
 	animation: none;
@@ -1062,5 +1063,8 @@ a:nth-child(15) {
 	}
 	#chevron_container {
 		display: none;
+	}
+	a:nth-child(15) {
+		display: block;
 	}
 }
