@@ -407,10 +407,10 @@ body::-webkit-scrollbar {
 	animation: 60s infinite normal linear cloud;
 	opacity: .5;
 }
-.cloud:nth-child(14) {
+.cloud:nth-child(13) {
 	animation: 30s infinite 1s normal linear cloudtwo;
 }
-.cloud:nth-child(15) {
+.cloud:nth-child(16) {
 	animation: 50s infinite 2.5s normal linear cloudthree;
 }
 @keyframes cloud {
