@@ -24,6 +24,9 @@ $(document).ready(function(){
     $("#five_trigger").click(function() {
         $("#coverfive").show();
     });
+    $("#zero_trigger").click(function() {
+        $("#coverzero").show();
+    });
 
     $("#cover").click(function() {
         $("#two").css("opacity", "1");
@@ -74,6 +77,26 @@ $(document).ready(function(){
                 $(this).css("left", "80%");
                 $("#coverfive").click(function() {
                     $(this).attr("href", "five.html");
+                 })
+            })
+        })
+    });
+    $("#coverzero").click(function() {
+        $(this).css("top", "5%");
+        $(this).css("left", "49%");
+        $("#two").css("opacity", "1");
+        $("#coverzero").click(function() {
+            $(this).css("top", "27%");
+            $(this).css("left", "18%");
+            $("#three").css("opacity", "1");
+            $("#coverzero").click(function() {
+                $("#four").css("opacity", "1");
+                $(".number").css("opacity", ".7");
+                $("#enter").css("opacity", "1");
+                $(this).css("top", "70%");
+                $(this).css("left", "80%");
+                $("#coverzero").click(function() {
+                    $(this).attr("href", "tenstars.html");
                  })
             })
         })
