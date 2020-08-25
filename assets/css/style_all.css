@@ -139,6 +139,7 @@ p:nth-child(1) {
 	left: 50%;
 	transform: translateX(-50%);
 	width: 75%;
+	margin-bottom: 10%;
 }
 
 .image {
