@@ -30,6 +30,17 @@ $(document).ready(function(){
                 $("#discovery").show();
                 $("#discovery").css("z-index", "12");
             });
+            
+            $("#camera").hover(function(){
+                $(".hover_tag:nth-child(21)").css("opacity", "1");
+            }, function() {
+                $(".hover_tag:nth-child(21)").css("opacity", "0");
+            });
+            $("#pen").hover(function(){
+                $(".hover_tag:nth-child(22)").css("opacity", "1");
+            }, function() {
+                $(".hover_tag:nth-child(22)").css("opacity", "0");
+            });
 
             $("#chevron_container").click(function() {
         var clicks = $(this).data("clicks");
@@ -160,11 +171,11 @@ $(document).ready(function(){
     }, function() {
     });
     $(".hover_box:nth-child(16)").hover(function(){
-        $(".resume_background:nth-child(13)").delay(0).animate({
+        $(".resume_background:nth-child(17)").delay(0).animate({
             left: "29.5vw",
             top: "-6vw",
             }, 1000);
-        $(".resume_background:nth-child(14)").delay(1000).animate({
+        $(".resume_background:nth-child(18)").delay(1000).animate({
             left: "-15vw",
             bottom: "10vw;",
             }, 1000);
@@ -217,25 +228,12 @@ $(document).ready(function(){
         $(this).siblings(".tab").show("slow");
     });
 
-    $("#camera").hover(function(){
-        $(".hover_tag:nth-child(20)").css("opacity", "1");
-    }, function() {
-        $(".hover_tag:nth-child(20)").css("opacity", "0");
-    });
-    $("#pen").hover(function(){
-        $(".hover_tag:nth-child(21)").css("opacity", "1");
-    }, function() {
-        $(".hover_tag:nth-child(21)").css("opacity", "0");
-    });
-
     $("#camera").click(function() {
         $("#illustrations").hide("slow");
         $("#photography").show("slow");
         $(".carousel_nav:nth-child(9)").hide("slow");
         $(".carousel_nav:nth-child(8)").hide("slow");
-        $(".carousel_nav:nth-child(7)").hide("slow");
-        $(".carousel_nav:nth-child(6)").hide("slow");
-        $("#carousel_nav_container").css("width", "14vw");
+        $("#carousel_nav_container").css("width", "20vw");
         $(".carousel").css("left", "0");
     });
     $("#pen").click(function() {

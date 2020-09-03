@@ -68,10 +68,6 @@ html, body {
 	box-shadow: -20px 20px 15px rgba(60, 90, 152, 1);
 }
 
-.bar {
-	position: absolute;
-}
-
 #delete {
 	font-size: 50px;
 	opacity: .7;
@@ -81,6 +77,7 @@ html, body {
 #enter {
 	font-size: 50px;
 	opacity: .7;
+	color: black;
 }
 
 #cover {
@@ -92,33 +89,8 @@ html, body {
 	transform: translateX(-50%);
 	top: 48%;
 }
-
-#covertwo {
-	display: none;
-	width: 120px;
-	height: 120px;
-	position: absolute;
-	left: 19%;
-	transform: translateX(-50%);
-	top: 70%;
-}
-#coverfive {
-	display: none;
-	width: 120px;
-	height: 120px;
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	top: 27%;
-}
-#coverzero {
-	display: none;
-	width: 120px;
-	height: 120px;
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	top: 48%;
+a {
+	text-decoration: none;
 }
 
 p {
@@ -129,7 +101,6 @@ p {
 	font-size: 50px;
 	margin-top: 10%;
 }
-
 p:nth-child(1) {
 	font-weight: 900;
 }
