@@ -42,21 +42,6 @@ $(document).ready(function(){
                 $(".hover_tag:nth-child(22)").css("opacity", "0");
             });
 
-            $("#chevron_container").click(function() {
-        var clicks = $(this).data("clicks");
-            if (clicks) {
-                // even clicks
-                $("#nav_menu").animate({
-                    bottom: -400
-                })
-            } else {
-              // odd clicks
-                $("#nav_menu").animate({
-                    bottom: 0
-                });
-               }
-                $("#chevron_container").data("clicks", !clicks);
-            });
 
             $("#chevron_container").hover(function(){
                 $("#chevron").css({
@@ -100,21 +85,6 @@ $(document).ready(function(){
 
         } else {
             //run portrait script
-            $("#chevron_container").click(function() {
-        var clicks = $(this).data("clicks");
-            if (clicks) {
-                // even clicks
-                $("#nav_menu").animate({
-                    bottom: -1500
-                })
-            } else {
-              // odd clicks
-                $("#nav_menu").animate({
-                    bottom: 0
-                });
-               }
-       $("#chevron_container").data("clicks", !clicks);
-    });
         };
     }); 
 
