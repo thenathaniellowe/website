@@ -239,7 +239,7 @@ body::-webkit-scrollbar {
 	height: 30vw;
 	right: 0;
 	top: 10vw;
-	font-size: 2vw;
+	font-size: 1.8vw;
 }
 
 #drive {
@@ -495,7 +495,7 @@ a:nth-child(15) {
 	font-size: 2vw;
 	line-height: 6vw;
 	opacity: 1;
-	transition: 1s;
+	transition: .25s;
 	opacity: 0;
 }
 
@@ -533,22 +533,22 @@ a:nth-child(15) {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	position: relative;
-	margin-top: 5vw;
+	margin-top: 3vw;
 	text-align: center;
 	line-height: .1vw;
 	width: 100%;
 	height: auto;
 	font-size: 2vw;
 }
-
 .education_line:nth-child(1) {
 	font-weight: 700;
-	margin-top: 0;
+	margin-top: -50px;
 }
-.education_line:nth-child(3) {
-	font-weight: 700;
+.education_line:nth-child(5) {
+	margin-top: 5vw;
 }
-.education_line:nth-child(4) {
+.education_line:nth-child(6) {
+	margin-top: 5vw;
 	font-weight: 700;
 }
 
@@ -571,19 +571,33 @@ a:nth-child(15) {
 	z-index: 3;
 }
 
-.experience_line:nth-child(4n-3) {
+.experience_line:nth-child(1) {
 	font-weight: 700;
+	margin-top: 4vw;
 }
-.experience_line:nth-child(4n-2) {
+.experience_line:nth-child(2) {
 	font-style: italic;
 }
-.experience_line:nth-child(1) {
-	margin-top: 5vw;
-}
-.experience_line:nth-child(4n) {
+.experience_line:nth-child(5) {
 	margin-bottom: 2vw;
 }
-
+.experience_line:nth-child(4n+6) {
+	font-weight: 700;
+}
+.experience_line:nth-child(4n+7) {
+	font-style: italic;
+}
+.experience_line:nth-child(4n+9) {
+	margin-bottom: 1.5vw;
+}
+a {
+	font-weight: 200;
+	text-decoration: none;
+	color: white;
+}
+a:hover {
+	font-weight: 700;
+}
 .resume_background {
 	position: absolute;
 	width: 10vw;
@@ -595,13 +609,13 @@ a:nth-child(15) {
 	position: absolute;
     opacity: .5;  
 }
-.resume_background:nth-child(17) {
+.resume_background:nth-child(18) {
 	top: -20vw;
     transform: rotate(20deg);
     left: 45vw;
     width: 20vw;
 }
-.resume_background:nth-child(18) {
+.resume_background:nth-child(19) {
 	top: 43vw;
     transform: rotate(-15deg);
     left: -35vw;
@@ -674,7 +688,7 @@ a:nth-child(15) {
 	margin-top: 2vw;
 	text-align: center;
 	color: white;
-	font-size: 1.5vw;
+	font-size: 1vw;
 	-webkit-filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.4));
     filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.4));
 	transition: .2s;
@@ -682,6 +696,7 @@ a:nth-child(15) {
 }
 .button:hover {
 	cursor: pointer;
+	font-weight: 700;
 }
 #download {
 	filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.6));

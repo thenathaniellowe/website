@@ -1,24 +1,21 @@
 $(document).ready(function(){
 // page position
+    var home = document.getElementById("home_container")
+    var about = document.getElementById("about_container")
+    var resume = document.getElementById("resume_container")
+    var portfolio = document.getElementById("portfolio_container")
+
     $("#home").click(function() {
-        $("html, body").animate({
-            scrollTop: $("#home_container").offset().top
-        }, 500)
+        home.scrollIntoView({behavior:"smooth"})
     });
     $("#about").click(function() {
-        $("html, body").animate({
-            scrollTop: $("#about_container").offset().top
-        }, 500)
+        about.scrollIntoView({behavior:"smooth"})
     });
     $("#resume").click(function() {
-        $("html, body").animate({
-            scrollTop: $("#resume_container").offset().top
-        }, 500)
+        resume.scrollIntoView({behavior:"smooth"})
     });
     $("#portfolio").click(function() {
-        $("html, body").animate({
-            scrollTop: $("#portfolio_container").offset().top
-        }, 500)
+        portfolio.scrollIntoView({behavior:"smooth"})
     });
 // landscape vs portrait
     $(window).on("resize load", function() {
@@ -141,11 +138,11 @@ $(document).ready(function(){
     }, function() {
     });
     $(".hover_box:nth-child(16)").hover(function(){
-        $(".resume_background:nth-child(17)").delay(0).animate({
+        $(".resume_background:nth-child(18)").delay(0).animate({
             left: "29.5vw",
             top: "-6vw",
             }, 1000);
-        $(".resume_background:nth-child(18)").delay(1000).animate({
+        $(".resume_background:nth-child(19)").delay(500).animate({
             left: "-15vw",
             bottom: "10vw;",
             }, 1000);
