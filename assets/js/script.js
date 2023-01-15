@@ -150,7 +150,7 @@ $(document).ready(function(){
 
 // resume
     $(".hover_box:nth-child(13)").hover(function(){
-        $(".library").delay(500).animate({
+        $(".library").delay(300).animate({
             opacity: 1,
             }, 1000);
         $("#title").delay(4000).animate({
@@ -171,29 +171,19 @@ $(document).ready(function(){
     }, function() {
     });
     $(".hover_box:nth-child(16)").hover(function(){
-        $(".resume_background:nth-child(18)").delay(0).animate({
-            left: "29.5vw",
-            top: "-6vw",
-            }, 1000);
-        $(".resume_background:nth-child(19)").delay(500).animate({
-            left: "-15vw",
-            bottom: "10vw;",
+        $(".resume_background:nth-child(19)").delay(300).animate({
+            left: "0%",
             }, 1000);
     }, function() {
     });
-    $(".hover_box:nth-child(17)").hover(function(){
-        $(".background_position:nth-child(13)").animate({
-            left: "19vw",
-            top: "4vw",
-            opacity: "1",
-            }, 1000);
-        $(".background_position:nth-child(14)").animate({
-            left: "-10vw",
-            top: "30vw",
-            opacity: "1",
+    $(".hover_box:nth-child(16)").hover(function(){
+        $(".resume_background:nth-child(20)").delay(300).animate({
+            top: "-10%",
+            transform: "rotate(45deg)"
             }, 1000);
     }, function() {
     });
+
  
 // portfolio
     $(".carousel_nav").click(function() {

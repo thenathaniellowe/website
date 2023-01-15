@@ -669,31 +669,22 @@ a:hover {
 	position: absolute;
     opacity: .5;  
 }
-.resume_background:nth-child(18) {
-	top: -20vw;
-    transform: rotate(10deg);
-    left: 45vw;
-    width: 20vw;
-}
 .resume_background:nth-child(19) {
-	top: 43vw;
-    transform: rotate(-15deg);
-    left: -35vw;
-    width: 20vw;
+	top: 70%;
+  transform: rotate(30deg);
+  left: 100%;
+  width: 40%;
+}
+.resume_background:nth-child(20) {
+	top: -40%;
+	transform: rotate(25deg);
+  left: 60%;
+  width: 30%;
 }
 .background-position {
 	opacity: 0;
 }
-.background_position:nth-child(13) {
-	top: 4vw;
-    transform: rotate(-25deg);
-    right: 5vw;
-}
-.background_position:nth-child(14) {
-	transform: rotate(20deg);
-    left: -30vw;
-    top: 100vw;
-}
+
 
 .contact_line {
 	left: 50%;
@@ -1040,22 +1031,7 @@ a:hover {
 	a:nth-child(15) {
 		display: block;
 	}
-	.resume_background:nth-child(17) {
-        left: 29.5vw;
-        top: -6vw;
-    }
-    .resume_background:nth-child(18) {
-        left: -15vw;
-        bottom: 10vw;
-    }
-    .background_position:nth-child(13) {
-        left: 19vw;
-    	top: 4vw;
-    }
-    .background_position:nth-child(14) {
-        left: -10vw;
-    	top: 30vw;
-    }
+ 
     #moon_container {
     	top: 40vw;
     }
