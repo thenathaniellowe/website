@@ -850,14 +850,29 @@ a:hover {
 }
 
 #carousel_view {
-	position: absolute;
+	position: relative;
 	left: 50%;
-	top: 25vw;
-	transform: translate(-50%, -50%);
+	top: 15%;
+	transform: translateX(-50%);
 	width: 66vw;
 	height: 22vw;
 	overflow: hidden;
 	z-index: 11;
+}
+
+#projects {
+	position: relative;
+	left: 50%;
+	top: 10%;
+	transform: translateX(-50%);
+	width: 55vw;
+	height: 22vw;
+	overflow: hidden;
+	z-index: 11;
+	color: white;
+	text-align: center;
+	font-weight: 700;
+	border-style: none;
 }
 
 .carousel {
@@ -883,6 +898,9 @@ a:hover {
 	border-width: .5vw;
 	box-sizing: border-box;
 	overflow: hidden;
+}
+.borderless {
+	border-style: none;
 }
 
 .square {
@@ -922,10 +940,10 @@ a:hover {
 #carousel_nav_container {
 	width: 24vw;
 	height: 5vw;
-	position: absolute;
+	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
-	top: 40vw;
+	top: 18%;
 	background-color: rgba(255, 255, 255, .4);
 	border-radius: 5px;
 	z-index: 9;

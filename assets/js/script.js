@@ -259,6 +259,7 @@ $(document).ready(function(){
         $("#carousel_view").css("overflow", "visible");
         $("#carousel_nav_container").css("z-index", "-1");
         $(".thumbnail").hide();
+        $("#projects").hide();
         return false;
     });
 
@@ -270,6 +271,7 @@ $(document).ready(function(){
         $("#carousel_nav_container").css("z-index", "11");
         $(".thumbnail").show();
         $(".photo_container").show();
+        $("#projects").show();
         return false;
     });
 });
